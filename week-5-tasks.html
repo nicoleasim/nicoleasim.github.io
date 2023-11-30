@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>MAD A Week 5</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Index</title>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="mystyle5.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.left {
+width: 50%;
+}
+
+.column.right {
+width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+ }
+ </style>
+</head>
+
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!--NAVBAR-->
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href=""><b>Pixelated Perspectives</b></a>
+
+        <a class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a class="active" href="index.html" class="pure-menu-link">Home</a></li>
+        </a>
+    </div>
+</div>
+
+<!---HEADER--->
+
+<div class="splash-container1">
+    <div class="splash">
+        <h1 class="splash-head">Week 5</h1>
+        <p class="splash-subhead">
+            Gaming in Humanities Education
+        </p>
+		 <p>
+		<div id="button">
+           <a href="#iltasks" class="pure-button pure-button-primary">IL Tasks</a>
+        </p>
+		</div>
+		 <p>
+		<div id="button">
+           <a href="#labtasks" class="pure-button pure-button-primary">Lab Tasks</a>
+        </p>
+		</div>
+    </div>
+</div>
+
+<!---CONTENT-->
+
+<div class="content-wrapper">
+    <div class="content"  id="iltasks">
+        <h2 class="content-head is-center">IL Tasks</h2>
+
+        <div class="pure-g">
+         <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+		<h3 class="content-subhead">
+		Task 1: Reviewing Profesional Writing Characteristics
+		</h3>
+		<p>I have found these helpful for evaluating my own writing and other websites. I have never considered the impact a negative voice could have on a piece of writing for example, and it is something I am going to watch out for.
+		</p>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: Evaluate the Use of Text
+		</h3>
+		</div>
+		<h4>
+		<a href="https://www.sciencemuseum.org.uk/games-and-apps" target="_blank">The Science Museum</a>
+		</h4>
+		<div class="tablewk5">
+		<table style="width 100%">
+		<tr>
+			<th>Characteristcs</th>
+			<th>Evaluation</th>
+		</tr>
+		<tr>
+			<td><b>Accuracy</td></b>
+			<td>The text is accurate</td>
+		</tr>
+		<tr>
+			<td><b>Active Voice</td></b>
+			<td>There is no first person/reference to who is writing the website</td>
+		</tr>
+		<tr>
+			<td><b>Bias</td></b>
+			<td>There are no biases in particular. The museum is clearly aimed at children however the website is clarly catered for adults who are visiting or taking their children there. While this is obvious to me, there are no restrictions/phrases that suggest adults cannot also enjoy the exhibits.</td>
+		</tr>
+		<tr>
+			<td><b>Clarity</td></b>
+			<td>I have not noticed any technically difficult words.</td>
+		</tr>
+		<tr>
+			<td><b>Conciseness</td></b>
+			<td>The information is concise.</td>
+		</tr>
+		<tr>
+			<td><b>Conversational</td></b>
+			<td>While the language is formal they use ‘us’, and ‘ours’ when speaking about the museum and ‘you’ when speaking about the visitor. This allows for a smooth, conversational tone.</td>
+		</tr>
+		<tr>
+			<td><b>Parallelism</td></b>
+			<td>Yes there is parallelism in different areas of the website. For example when discussing opening hours of different exhibits they use the same words, giving a sense of unity.</td>
+		</tr>
+		<tr>
+			<td><b>Positive Voice</td></b>
+			<td>“If you have booked a ticket to visit our IMAX cinema, please ensure that you have also booked a free museum admission timeslot before arrival.” o	In this example, the museum could have rephrased it to say that people without a museum timeslot would be denied entry, however that would have suggested restrictions and a missed opportunity.</td>
+		</tr>
+		<tr>
+			<td><b>Strong Nouns/Verbs</td></b>
+			<td>“The museum is open daily from 10.00–18.00 (last entry 17.15).” They could have phrased this as “The opening time for the museum is 10am and the closing time is 6pm…”, or something similar, which would have been quite clunky to read.</td>
+		</tr>
+		<tr>
+			<td><b>Sentence Variety</td></b>
+			<td>In the ‘Objects and Stories’ category of the site they have 3 different sections to look at, each with a different description. The first one starts with ‘Take a look’, the second with ‘Find out’, and the final being ‘Discover’. These all mean more or less the same thing and they essentially could have used the same one for each but it would have been too repetitive.</td>
+		</tr>
+		<tr>
+			<td><b>Simple Words</td></b>
+			<td>The website makes use of simple words and phrases.</td>
+		</tr>
+		<tr>
+			<td><b>Shorter Paragraphs</td></b>
+			<td>The website makes use of short paragraphs and sentences throughout the site. For example, they have a brief sentence describing the digital games underneath a still image of the game.</td>
+		</tr>
+		<tr>
+			<td><b>Tone and Voice</td></b>
+			<td>As the website is the official site for the museum, a formal tone is used to address the audience. It presents facts and information about the website rather than personality.</td>
+		</tr>
+		</table>
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 3: Reflection</h3>
+		
+		<p>So far, I have developed personas and an audience that I believe are suitable for the topic. I have used different resources, such as government statistics and journal articles to develop these to be as accurate as possible. I have defined my purpose, my main goal is to attract and appeal to teachers to make use of digital technologies in STEM subjects. I have conducted research however I definitely have to do more, and I have organized my resources they just require general upkeep.</p>
+		
+		</div>
+		
+<!--RIBBON-->
+	
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+            </p>
+			</div>
+			</div>
+			</div>
+			
+    <!--LAB TASKS-->
+<section id="labtasks">
+
+        <h2 class="content-head is-center">Lab Tasks</h2>
+		<div class="pure-g">
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 1: Voyant Tools
+		</h3>
+	
+	<div class="row">
+	<div class="column left">
+		<p><i>The Science Museum</p></i>
+		<ul>
+		<li><b>High Frequency Words</li></B>
+		<dd>- The most commonly used words on this website were, 'science', 'app', 'library, 'games', and 'learning'. From these words, it is evident that the material is about games/applications that facilitate learning about science-based topics.
+		</dd>
+		</ul>
+		</div>
+		
+		<div class="colum right">
+		<i><p>Blog</p></i>
+		<ul>
+		<li><b>High Frequecy Words</li></b>
+		<dd>- The most commmonly used words on this website were, 'humannities', 'digital', 'games', 'learning', 'educational', 'video-based', and 'new'. From these words, it is evident that the materia is about digital games for education in the humanities. Less used words such as 'new', 'experiences', and 'engage;, further give a taste about what the blog is about.
+		</dd>
+		<li><b>Trends and Bubblelines</li></b>
+		<dd>- 'Games' and 'digital' follow similar patterns, which makes sense as these likely go hand in hand. 'Learning' is particularly frequent at the end of the blog, suggesting that the ending analysis has a focus on the impact these games have on learning.
+		</dd>
+		</ul>
+		</div>
+		</div>
+		
+		<H4>Comparison</h4>
+		<ul>
+		<li>The Science Museum has the interface and features of a website of something I’d like to create. They have a range of educational games, but with minimal text that mostly involves information about the museum itself. I also thought the language used in this would be the kind I need for my webiste.
+		</li>
+		<li>On the other hand, the blog is exactly what my topic is about. It is good to have a visual representation of what words they most commonly use, and maybe even see what words they don’t use that I would value as important.
+		</li>
+		</ul>
+		</div>
+		
+		
+		 <div class="pure-g">
+                <div class="pure-u-1-2">
+                   <img class="pure-img-responsive" src="master-files/screenshot004-voyant-tool.jpg" alt="Science museum voyant tool analysis">
+                    </div>
+				<div class="pure-u-1-2">
+                   <img class="pure-img-responsive" src="master-files/screenshot005-voyant-tool-2.jpg" alt="Blog voyant tool analysis">
+                    </div>
+					</div>
+					
+					
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: Samples for narrative
+		</h3>
+		<p>
+		<b>VR: The game changer in humanities education</b>
+		<br>
+		As educators, we have the tools in place to change the way our children think. Enter the game-changer: Virtual Reality technology. Stepping beyond the traditional ways of learning, we can transform the experience of our children.
+		<br>
+		The use of VR technology can engage children in humanities-based topics in brand-new ways. Imagine stepping foot into a WW2 scene, where children can merge their learning with firsthand ‘experience’. 
+		<br>
+		We are committed to exploring cost-effective VR resources with funding opportunities to make the use of VR a reality in the classroom. We encourage educators to share this point further afield, and to cease opportunities to use this equipment.
+		<br>
+		Together, we can inspire a new generation of thinkers and storytellers, who have been able to see the world through different lenses through VR technology. 
+		</p>
+		
+		<p>
+		<b>Introducing a New Generation of Thinkers: Gaming in Humanities</b>
+		<br>
+		Our children are living in an increasingly digital society, so why not give them the tools to use it to their advantage? This website is an exploration of the integration of digital gaming in humanities education. The use of digital games in humanities education can beneficially affect children’s learning. From virtual reality technology to mobile apps, children can engage in new experiences that will transform their learning experiences.
+		<br>
+		Implementing digital gaming into the classroom can reshape the experience of children learning subjects such as history. VR technologies can transport students to historical landscapes where they can be immersed into it, encouraging engagement and enthusiasm to learn.
+		<br>
+		We are inviting educators to grasp the potential digital technologies can have in humanities education. We invite teachers to think about their own experiences using digital technologies and delve into how it affects their skills versus traditional methods of learning. Together we can create a generation of exceptional critical thinkers.
+		</p>
+		<p>
+		<h4>Analysis
+		</h4>
+		<ul>
+		<li>I have tried to use a passive voice. For example, instead of saying the possible negatives of not implementing digital technologies, I have focused on the positives they could bring.
+		</li>
+		<li>I have not included any technical jargon. I understand that some teachers may not be aware of what I am talking about, and so have avoided using anything too specialized.
+		</li>
+		<li>I have used a slightly convincing/demanding tone, but not in a way that my audience would be put off from it. I want to feel ‘togetherness’, and therefore have used ‘we’, quite often, as I want my audience to feel that I am one of them.
+		</li>
+		</div>
+		
+		</div>
+	
+		
+	
+
+</body>
+</html>

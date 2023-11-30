@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>MAD A Week 4</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Index</title>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="mystyle5.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!--HEADER-->
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href=""><b>Pixelated Perspectives</b></a>
+
+        <a class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a class="active" href="index.html" class="pure-menu-link">Home</a></li>
+        </a>
+    </div>
+</div>
+
+<!--HEADER--->
+
+<div class="splash-container1">
+    <div class="splash">
+        <h1 class="splash-head">Week 2</h1>
+        <p class="splash-subhead">
+            Gaming in Humanities Education
+        </p>
+		 <p>
+		<div id="button">
+           <a href="#iltasks" class="pure-button pure-button-primary">IL Tasks</a>
+        </p>
+		</div>
+		 <p>
+		<div id="button">
+           <a href="#labtasks" class="pure-button pure-button-primary">Lab Tasks</a>
+        </p>
+		</div>
+    </div>
+</div>
+
+<!--CONTENT-->
+
+<div class="content-wrapper">
+    <div class="content" id="iltasks">
+        <h2 class="content-head is-center">IL Tasks</h2>
+
+        <div class="pure-g">
+         <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+         <h3 class="content-subhead">
+		Task 1: CSS Revision
+		</h3>
+		<h4>
+		Colour Palette</h4>
+		<p>I decided that I wanted to feature green and blue hues in my design, as I believe these to be calming colours which would suit my audience. Using Paletton, I was able to create a colour pallette which suits what I want.
+		</p>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: Evaluate the use of text
+		</h3>
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		<h3>Task 3: Reflection on Progress
+		</h3>
+		</div>
+	
+	
+		<!--RIBBON-->
+ 
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+            </p>
+			</div>
+			</div>
+			</div>
+			
+   <!--LAB TASKS-->
+<section id="labtasks">
+	
+       <h2 class="content-head is-center">Lab Tasks</h2>
+		<div class="pure-g">
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 1
+		</h3>
+		</div>
+		
+	<!-- begin navigation menu -->
+	<div class="footer">
+	<div id="menu">
+		<a href="week-3-tasks.html">Week 3</a>
+	</div>
+	</div>
+	<!-- end navigation menu -->
+
+</body>
+</html>

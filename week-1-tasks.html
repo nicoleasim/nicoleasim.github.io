@@ -1,67 +1,165 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
-
-	<title>IL & Lab Tasks Week 1</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<!--  <link rel="stylesheet" href="filepath/filename.css"> -->
-	<!--  When you have a stylesheet you can uncomment the link element above and edit the href to suit your file system and 		point to your CSS sheet -->
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>MAD A Week 1</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Index</title>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="mystyle5.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
 
-	<!-- begin the main section of the page-->
-	<div id="*Insert appropriate ID - this will not display on your website*">
-		<h1>Week 1</h1>
-		
-	<section id="task1">
-		<h2>IL Tasks</h2>
-		<h3>Task 1</h3>
-		<p>The independent learning tasks allowed us to think about topics and research what we wanted to focus on. Initially, I had considered a topic surrounding AI, and how influential it can be for decision making in business, however I found that the subject of AI is so broad that it would be difficult for me to get so specific. After looking over material from 1st and 2nd year, I settled on the topic of gaming in educational settings. Below are my notes from this task:
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<!--NAVBAR-->
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href=""><b>Pixelated Perspectives</b></a>
+
+        <a class="pure-menu-list">
+            <li class="pure-menu-item"><a class="active"a href="index.html">Home</a></li>
+        </a>
+    </div>
+</div>
+
+<!---HEADER--->
+
+<div class="splash-container1">
+    <div class="splash">
+        <h1 class="splash-head">Week 1</h1>
+        <p class="splash-subhead">
+            Gaming in Humanities Education
+        </p>
+		 <p>
+		<div id="button">
+           <a href="#iltasks" class="pure-button pure-button-primary">IL Tasks</a>
+        </p>
+		</div>
+		 <p>
+		<div id="button">
+           <a href="#labtasks" class="pure-button pure-button-primary">Lab Tasks</a>
+        </p>
+		</div>
+    </div>
+</div>
+
+<!--CONTENT-->
+
+<div class="content-wrapper">
+    <div class="content" id="iltasks">
+        <h2 class="content-head is-center">IL Tasks</h2>
+
+        <div class="pure-g">
+         <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+          <h3 class="content-subhead">
+		Task 1: Identifying a Topic
+		</h3>
+		<p>The independent learning tasks allowed us to think about topics and research what we wanted to focus on. Initially, I had considered a topic surrounding AI, and how influential it can be for decision making in business, however I found that the subject of AI is so broad that it would be difficult for me to get so specific. Being able to discuss this with my tutor and classmates in the labs allowed me to consider and hear other ideas. After looking over material from 1st and 2nd year, I settled on the topic of gaming in educational settings. Below are my notes from this task:
 		<br>
-		<br><i>Why video games are essential in improving student engagement in educational settings</i><br>
+		<br><b>Why video games are essential in improving student engagement in educational settings</b><br>
 		<ul>
-		<li><b>Who would benefit from engaging with this topic?</b></li>
+		<li><i>Who would benefit from engaging with this topic?</i></li>
 		<dd>- Teachers and educators so they can improve/implement new teaching methods</dd>
 		<dd>- Parents, who may have assumptions about video games that relate to stereotypes</dd>
-		<li><b>Are the envisioned audience acquainted with some aspects of the topic?</b></li>
+		<li><i>Are the envisioned audience acquainted with some aspects of the topic?</i></li>
 		<dd>- Yes, the use of digital resources is encouraged in the Scottish education system by the Scottish Government.</dd>
-		<li><b>Will you have to persuade them that this is worth learning?</b></li>
+		<li><i>Will you have to persuade them that this is worth learning?</i></li>
 		<dd>- Initially maybe, depending on the person. I feel that older teachers may not be as open to this as younger ones, however that could be a stereotype that I am feeding into about older people being resistant to technology.</dd>
 		</ul>
-		</p>
+		<p>After considering this, I realised I need to narrow down my topic further. I narrowed it down to the use of video games in humanaties education. I had considered STEM subjects, but as I have a limited knowledge of this I chose to make my focus on the humanaties.</P>
+	
 		
-		<h3>Task 2</h3>
-		<h4>My Search Strategy</h4>
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: Reseach Sources</h3>
 		<p>My first source was Google Scholar during my research. I started with a basic search of 'video games used in education', and 'digital resources in education'. The next refinment was '"video games" "student engagement" "education".
 		</p>
-		<h3>Task 3</h3>
-		<p>Sources are organised:</p>
+		<p><b>Search Term Evaluation</p></b>
 		<ul>
-			<li>Within a file on OneDrive</li>
-			<li>Explained within an excel sheet <a href="nicole-source-table.xlsx" target=_blank">Nicole Source Table document</a></li>
+		<li><i>'video games' 'cultural heritage' 'education'</li></i>
+		<dd>- This search term returned useful sources for me regarding the use of video games in cultural heritage education, for example it gave me articles about how they can maximise engagement in education which is useful for my audience.</b>
+		</ul>
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 3: Metadata & Justification
+		</h3>
+		</div>
+		<ul>
+		<li>Sources are organised within:
+		</li>
+		<dd>- <a href="nicole-source-table.xlsx">Nicole Source Document</a>
+		</dd>
+		</ul>
+		</div>
+		</div>
+		
+<!--RIBBON-->
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Did you know...</h2>
+		   <p>
+                Erskine Stewart's Melville Schools in Edinburgh have integrated virtual reality into everyday lessons. (ESMS, 2020)
+            </p>
+			</div>
+			</div>
+			</div>
 			
-		</section>
+       <!-- LAB TASKS -->
+<section id="labtasks">
+	
+        <h2 class="content-head is-center">LAB Tasks</h2>
+		<div class="pure-g">
+		</div>
 		
-	<section id="task2">
-		<h2>Lab Tasks</h2>
-		<h3>Task 1</h3>
-		<h4>My File Structure</h4>
-		<img src="images/file-structure.jpg" alt="File Structure" width="500" height="333">
-		</section>
-		
-	</div>
-	<!-- end the main section of the homepage -->
-	<hr>	
-	<!-- begin navigation menu -->
-	<footer>
-	<div id="menu">
-		<a href="index_template.html">Homepage</a>
-	</div>
-	</footer>
-	<!-- end navigation menu -->
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		<h3>Task 1: File Structure
+		</h3>
+		</div>
+		<p>My files are organised within a document on my OneDrive. As pictured below, I have ensured to name my files appopriately and in lower-class.
+		</p>
+		<img class="pure-img-responsive" src="master-files/screenshot001-file-structure.jpg" alt="File Structure" width="500" height="333">
+		</div>
+		</div>
+
+  
 
 </body>
 </html>

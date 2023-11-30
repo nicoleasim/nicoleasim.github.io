@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>MAD A Week 7</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Index</title>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="mystyle5.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.left {
+width: 50%;
+}
+
+.column.right {
+width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+ }
+ </style>
+</head>
+
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href=""><b>Pixelated Perspectives</b></a>
+
+        <a class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a class="active" href="index.html" class="pure-menu-link">Home</a></li>
+        </a>
+    </div>
+</div>
+
+<!---HEADER--->
+
+<div class="splash-container1">
+    <div class="splash">
+        <h1 class="splash-head">Week 7</h1>
+        <p class="splash-subhead">
+            Gaming in Humanities Education
+        </p>
+		 <p>
+		<div id="button">
+           <a href="#iltasks" class="pure-button pure-button-primary">IL Tasks</a>
+        </p>
+		</div>
+		 <p>
+		<div id="button">
+           <a href="#labtasks" class="pure-button pure-button-primary">Lab Tasks</a>
+        </p>
+		</div>
+    </div>
+</div>
+
+<!--CONTENT-->
+<div class="content-wrapper">
+    <div class="content" id="iltasks">
+        <h2 class="content-head is-center">IL Tasks</h2>
+	
+        <div class="pure-g">
+         <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+		<h3 class="content-subhead">
+		Task 1: Explore the Creative Process</h3>
+		<p>In general I would not describe myself as a very creative person, and therefore some of the tasks have been difficult for me at times. However I have enjoyed learning about the deeper reasons for web design and how much they can impact the appeal of the information.
+		</p>
+		
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: Analyse Images
+		</h3>	
+		</div>
+		
+		<div class="row">
+		<div class="column left">
+		<i>The Science Museum</i><br>
+		<ul>
+		<div><li><b>What are the images used for?</li></b></div>
+		<div><dd> - The images are used mainly for advertising and aesthetics. For example, they have used an image for the background of the title with the colours black, purple and blue, which align with the websites overall aesthetic and fit the 'science' vibe. </dd></div>
+		<div><dd> - Screengrabs of scenes from games are used to appeal to the used to click and play the game. These also enhance the textual information given about the game, as a use may be less likely to be interested in playing the game when just looking at the text. </dd><br></div>
+		<div><li><b>What kinds of images are used?</li></b></div>
+		<div><dd> - The images used are raster images. When opened in a new tab, they are pixelated when zoomed in on and when trying to save them they automatically save as .png.</dd></div>
+		</ul>
+		</div>
+		
+		
+		<div class="column right">
+		<div><i>National Museum Scotland</i><br></div>
+		<ul>
+		<div><li><b>What are the images used for?</li></b></div>
+		<div><dd> - The images are used mainly to enhance and appeal. Simiralarly to the Science Museum, the use of images accompanys text. The information provides a brief description of the resource. As well as real life photographs, the website makes use of icons.</dd></div>
+		<br>
+		<div><li><b>What kinds of images are used?</li></b></div>
+		<div><dd> - Raster images are used. </dd></div>
+		</ul>
+		</div>
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 3: Incorporate Images into Moodboard
+		</h3>
+		
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 4: Generate Porfolio
+		</h3>
+		
+		<div class="pure-g">
+            <div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="master-files/img001-mada-vr-child-original.jpg" alt="VR Original">
+			</div>
+              <div class="pure-u-1-4">
+               <img class="pure-img-responsive" src="master-files/img002-mada-laptop-child-original.jpg" alt="Laptop Original">
+            </div>
+				<div class="pure-u-1-4">
+                <img class="pure-img-responsive" src="master-files/img003-mada-vr-children-original.jpg" alt="VR Children original">
+            </div>
+			<div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="master-files/img004-mada-laptop-children-original.jpg" alt="Children laptop original">
+            </div>
+			</div>
+			<div class="pure-g">
+            <div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="master-files/img005-mada-vr-balloon-original.jpg" alt="VR balloons Original">
+			</div>
+			<div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="master-files/img006-mada-scrabble-original.jpg" alt="scrabbled Original">
+			</div>
+			<div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="master-files/img007-mada-computers-original.jpg" alt="Computers Original">
+			</div>
+			<div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="master-files/img008-mada-adults-vr-original.jpg" alt="VR adults Original">
+			</div>
+		</div>
+		</div>
+		
+    <!--LAB TASKS-->
+<section id="labtasks">
+        <h2 class="content-head is-center">Lab Tasks</h2>
+		<div class="pure-g">
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 1: Image Optimisation
+		</h3>
+		
+		 <div class="pure-g">
+                <div class="pure-u-1-4">
+                   <img class="pure-img-responsive" src="master-files/img001-mada-vr-child-800px-72ppi-greyscale.jpg" alt="VR B&W1">
+                    </div>
+                <div class="pure-u-1-4">
+				   <img class="pure-img-responsive" src="master-files/img001-mada-vr-child-2400px-72ppi-greyscale.jpg" alt="VR B&W2">
+                </div>
+				 <div class="pure-u-1-4">
+				   <img class="pure-img-responsive" src="master-files/img001-mada-vr-child-800px-72ppi-indexed.jpg" alt="VR indexed">
+                </div>
+				 <div class="pure-u-1-4">
+				   <img class="pure-img-responsive" src="master-files/img001-mada-vr-child-2400px-80ppi-indexed.jpg" alt="VR colour Optimised">
+                </div>
+		<ul>
+		<li><b>Image 1</b> is greyscale, image size 800px, 72ppi resolution, cropped to a selection and a turned down brightness. I rate this one a 3. The greyscale gives the image depth, I have used this on my index page as the header image and it allows for text to stand out in front of it. The cropped selection gives enough of the image for a user to understand what the rest of it would be, it has not taken away from the image. However, the quality of the image is not great for what I want to use it for. 
+		</li>
+		<li><b>Image 2</b> is the same, however the image size is 2400px, rather than 800px. While the previous image size still looks good, the quality has reduced, and was not ideal for my use of it as a header, as the image will be blown up at a larger scale. After some research, I found that 2600x1600px is better quality for full-size images. This is evident as the header on my index page is now much clearer from using this image. I rate the image a 1, as it optimises my website while meeting the users needs.
+		</li>
+		<li><b>Image 3</b> has been indexed to a web-optimised colour palette. This has changed the image drastically and does not suit my website. This image may suit something else but I do not think my audience would enjoy or understand why it has been made cartoon-like. For that reason I rate this image a 5.
+		</li>
+		<li><b>Image 4</b> has been indexed to an optimum generated colour palette. The image size has been scaled to 2400px, and it is 80ppi. At first glance, the indexed photograph appears normal however when zoomed in you can see the colours have been blended together. I would not rate this photo as ideal for my website, however, it is useable when compared to image 3. I rate it a 3.
+		</li>
+		</ul>
+		</div>
+	
+	<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: File Format
+		</h3>
+		<p>
+		I have organised my screenshots and images in my 'Master Files' file, where I have named them appropriately. I am numbering them, and ensuring that I create a divide between images and screenshots. The file names are informative, meaning anyone who was viewing it should be able to understand it to an extent.
+		</p>
+		<img class="pure-img-responsive" src="master-files/screenshot003-image-files.jpg" alt="Master files">
+		</div>
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 3: Reflection
+		</h3>
+		<p>
+		This task has been useful for my website as I now understand the ways to optimise images for the web. While doing the essential reading, and some of my own research, I have discovered how important it is to have images that are optimised for the web. Research from Google (2018) found that the number of seconds a page takes to load has a huge effect on how likely the user is to bounce off of it and leave the website entirely. Therefore, I will ensure that my images are compressed and optimised to ensure a user would not leave my website. As I have discussed, my main audience is teachers who have busy lives and will want to read without waiting for a page to load.
+		</p>
+	</div>
+	</div>
+	
+		
+
+
+</body>
+</html>
